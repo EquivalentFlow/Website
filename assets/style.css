@@ -32,6 +32,19 @@ body{
   text-decoration: underline;
 }
 
+.card .title {
+  display: inline;
+  font-weight: 600;
+}
+
+.card .abstract {
+  display: inline;
+}
+
+.card .abstract::before {
+  content: " — ";
+}
+
 a{color:var(--link);text-decoration:none}
 a:hover{text-decoration:underline}
 
