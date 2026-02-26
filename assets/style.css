@@ -55,7 +55,7 @@ a:hover{text-decoration:underline}
 }
 .nav a{color:var(--text)}
 .nav .sep{color:var(--muted)}
-.nav .brand {
+.brand {
   font-style: italic;
   font-weight: 400; /* optional: prevents bold */
 }
