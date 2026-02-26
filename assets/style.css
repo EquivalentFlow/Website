@@ -55,7 +55,10 @@ a:hover{text-decoration:underline}
 }
 .nav a{color:var(--text)}
 .nav .sep{color:var(--muted)}
-.brand{font-weight:650}
+.nav .brand {
+  font-style: italic;
+  font-weight: 400; /* optional: prevents bold */
+}
 
 h1{font-size:40px;line-height:1.15;margin:0 0 14px}
 h2{font-size:22px;margin:30px 0 10px}
