@@ -15,6 +15,23 @@ body{
   line-height:1.55;
 }
 
+/* ——————————————————————
+   Publication links under abstracts
+   —————————————————————— */
+
+.links {
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
 a{color:var(--link);text-decoration:none}
 a:hover{text-decoration:underline}
 
