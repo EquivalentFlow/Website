@@ -126,13 +126,13 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
 }
 
 .pub-list li {
-  padding-left: 10px;   /* controls distance between number and card */
+  padding-left: 4px;    /* tighter distance between number and publication title */
 }
 
 /* Make publication cards tighter than default */
 .pub-card{
   padding: 5px 7px;
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
 }
 
 /* Header: citation + inline links */
