@@ -48,20 +48,11 @@ body{
 a{color:var(--link);text-decoration:none}
 a:hover{text-decoration:underline}
 
-.wrapper{
-  max-width:var(--maxw);
-  margin:0 auto;
-  padding:28px 20px 60px
-}
+.wrapper{max-width:var(--maxw);margin:0 auto;padding:28px 20px 60px}
 
 .nav{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  flex-wrap:wrap;
-  padding:6px 0 18px;
-  border-bottom:1px solid var(--line);
-  margin-bottom:26px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  padding:6px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px;
 }
 
 .nav a{color:var(--text)}
@@ -72,11 +63,12 @@ a:hover{text-decoration:underline}
   font-weight: 400;
 }
 
-/* ↓ Smaller name */
+/* Refined academic title */
 h1{
-  font-size:28px;
-  line-height:1.15;
-  margin:0 0 10px;
+  font-size:32px;
+  line-height:1.08;     /* slightly tighter */
+  margin:0 0 10px;      /* slightly reduced bottom space */
+  font-weight:600;      /* subtle weight refinement */
 }
 
 h2{font-size:22px;margin:30px 0 10px}
@@ -88,29 +80,13 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
 .list{margin:10px 0 0 0;padding-left:18px}
 .list li{margin:6px 0}
 
-/* ——————————————————————
-   Hero section (image + text)
-   —————————————————————— */
-
 .hero{
-  display:flex;
-  gap:24px;
-  align-items:flex-start;
-  flex-wrap:nowrap;
-}
-
-.hero > div{
-  flex:1;
-  min-width:0;
+  display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;
 }
 
 .avatar{
-  width:160px;
-  height:160px;
-  border-radius:14px;
-  object-fit:cover;
-  border:1px solid var(--line);
-  background:#f6f6f6;
+  width:140px;height:140px;border-radius:14px;object-fit:cover;
+  border:1px solid var(--line);background:#f6f6f6;
 }
 
 .card{
@@ -123,40 +99,22 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
 .card .title{font-weight:650}
 .card .meta{color:var(--muted);font-size:14px;margin-top:4px}
 
-.badges{
-  margin-top:8px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
+.badges{margin-top:8px;display:flex;flex-wrap:wrap;gap:10px}
 .badges a{font-size:14px}
 
 .footer-nav{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
+  display:flex;gap:12px;flex-wrap:wrap;
   margin-top:18px;
   padding-top:18px;
   border-top:1px solid var(--line);
 }
 
-/* ——————————————————————
-   Mobile
-   —————————————————————— */
+/* Mobile proportional scaling */
 
 @media (max-width:520px){
-
-  .hero{
-    flex-direction:column;
-  }
-
   h1{
-    font-size:24px;
+    font-size:26px;
+    line-height:1.1;
   }
-
-  .avatar{
-    width:110px;
-    height:110px;
-  }
+  .avatar{width:110px;height:110px}
 }
