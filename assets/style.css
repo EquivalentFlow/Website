@@ -92,6 +92,25 @@ a:hover{text-decoration:underline}
   display:none;
 }
 
+
+.home-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:4px 10px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:#f7f7f8;
+  color:var(--text);
+  font-weight:700;
+  font-style:normal;
+}
+
+.home-btn:hover{
+  text-decoration:none;
+  background:#efeff1;
+}
+
 /* Refined academic title */
 h1{
   font-size:28px;
