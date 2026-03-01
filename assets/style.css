@@ -121,9 +121,12 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
 }
 
 /* Publications compact layout */
-.pub-list{
-  padding-left: 1.6rem;
-  margin: 0;
+.pub-list {
+  padding-left: 28px;   /* controls distance of numbers from page edge */
+}
+
+.pub-list li {
+  padding-left: 10px;   /* controls distance between number and card */
 }
 
 /* Make publication cards tighter than default */
