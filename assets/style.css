@@ -119,53 +119,35 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
   .avatar{width:110px;height:110px}
 }
 
-/* Publications: clean reversed list */
-.pub-list{
-  padding-left: 1.4rem;
-  margin: 0;
+.pub-list {
+  padding-left: 1.6rem;
 }
 
-.pub-card{
-  padding: 14px 16px;
+.pub-card {
+  margin: 0 0 1.6rem 0;
+  padding: 14px 18px;
 }
 
-.pub-citation{
-  line-height: 1.45;
+.pub-citation {
+  line-height: 1.5;
 }
 
-.pub-num{
-  font-weight: 600;
-  margin-right: 0.35em;
-}
-
-.pub-meta{
+.pub-meta {
   margin-top: 6px;
   font-size: 0.92em;
   color: var(--muted);
 }
 
-.pub-meta a{
-  text-decoration: none;
-}
-.pub-meta a:hover{
-  text-decoration: underline;
-}
-
-/* Abstract toggle */
-.toggle-abstract{
+.toggle-abstract {
   margin-top: 8px;
-  padding: 0;
   border: 0;
   background: transparent;
   color: var(--link);
-  font-size: 0.92em;
   cursor: pointer;
+  font-size: 0.9em;
+  padding: 0;
 }
 
-.abstract{
-  margin-top: 8px;
-}
-
-.hidden{
+.hidden {
   display: none;
 }
