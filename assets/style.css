@@ -64,6 +64,25 @@ a:hover{text-decoration:underline}
   font-weight: 400;
 }
 
+
+.home-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:4px 10px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:#f7f7f8;
+  color:var(--text);
+  font-weight:700;
+  font-style:normal;
+}
+
+.home-btn:hover{
+  text-decoration:none;
+  background:#efeff1;
+}
+
 /* Refined academic title */
 h1{
   font-size:28px;
@@ -112,7 +131,11 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 
 /* Mobile proportional scaling */
 
-@media (max-width:500px){
+@media only screen and (max-width:500px){
+  .wrapper{
+    max-width: 420px;
+    padding:20px 14px 48px;
+  }
   h1{
     font-size:26px;
     line-height:1.1;
