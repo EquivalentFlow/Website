@@ -6,6 +6,15 @@
   <title>Publications — Lorenzo Lorenzetti</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
+  <script>
+  document.querySelectorAll(".toggle-abstract").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const target = document.getElementById(btn.dataset.target);
+      const isHidden = target.classList.toggle("hidden");
+      btn.textContent = isHidden ? "Abstract" : "Hide abstract";
+    });
+  });
+</script>
 <body>
   <div class="wrapper">
     <nav class="nav">
