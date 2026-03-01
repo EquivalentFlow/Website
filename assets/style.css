@@ -57,11 +57,39 @@ a:hover{text-decoration:underline}
 }
 
 .nav a{color:var(--text)}
-.nav .sep{color:var(--muted)}
 
-.brand {
-  font-style: italic;
-  font-weight: 400;
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.nav-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:4px 10px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:#f7f7f8;
+  color:var(--text);
+  font-style:normal;
+  font-weight:500;
+}
+
+.nav-btn:hover{
+  text-decoration:none;
+  background:#efeff1;
+}
+
+.nav-btn.is-current,
+.home-btn{
+  font-weight:700;
+}
+
+.mobile-menu{
+  display:none;
 }
 
 /* Refined academic title */
@@ -112,7 +140,56 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 
 /* Mobile proportional scaling */
 
-@media (max-width:500px){
+@media only screen and (max-width:500px){
+  .wrapper{
+    max-width: 340px;
+    padding:16px 10px 40px;
+  }
+
+  .nav{
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:8px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .mobile-menu{
+    display:block;
+    margin-left:auto;
+  }
+
+  .mobile-menu summary{
+    list-style:none;
+    cursor:pointer;
+    border:1px solid var(--line);
+    border-radius:6px;
+    background:#f7f7f8;
+    padding:4px 10px;
+    font-size:18px;
+    line-height:1;
+    user-select:none;
+  }
+
+  .mobile-menu summary::-webkit-details-marker{
+    display:none;
+  }
+
+  .mobile-menu-panel{
+    margin-top:8px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    min-width:170px;
+    align-items:stretch;
+  }
+
+  .mobile-menu-panel .nav-btn{
+    justify-content:flex-start;
+  }
+
   h1{
     font-size:26px;
     line-height:1.1;
