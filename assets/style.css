@@ -65,10 +65,10 @@ a:hover{text-decoration:underline}
 
 /* Refined academic title */
 h1{
-  font-size:32px;
-  line-height:1.08;     /* slightly tighter */
+  font-size:30px;
+  line-height:1;     /* slightly tighter */
   margin:0 0 10px;      /* slightly reduced bottom space */
-  font-weight:600;      /* subtle weight refinement */
+  font-weight:700;      /* subtle weight refinement */
 }
 
 h2{font-size:22px;margin:30px 0 10px}
