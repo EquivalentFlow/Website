@@ -10,13 +10,23 @@
   
 <body>
   <div class="wrapper">
-    <nav class="nav">
-      <a class="home-btn" href="index.html">Home</a>
-      <span class="sep">/</span>
-      <span class="brand">Publications</span>
-      <a href="research.html">Research</a>
-      <a href="talks.html">Talks</a>
-      <a href="contact.html">Contact</a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-btn home-btn" href="index.html">Home</a>
+      <div class="nav-links" aria-label="Desktop menu links">
+        <span class="nav-btn is-current" aria-current="page">Publications</span>
+        <a class="nav-btn" href="research.html">Research</a>
+        <a class="nav-btn" href="talks.html">Talks</a>
+        <a class="nav-btn" href="contact.html">Contact</a>
+      </div>
+      <details class="mobile-menu">
+        <summary aria-label="Toggle navigation menu">☰</summary>
+        <div class="mobile-menu-panel">
+          <span class="nav-btn is-current" aria-current="page">Publications</span>
+          <a class="nav-btn" href="research.html">Research</a>
+          <a class="nav-btn" href="talks.html">Talks</a>
+          <a class="nav-btn" href="contact.html">Contact</a>
+        </div>
+      </details>
     </nav>
 
     <h1>Publications</h1>
