@@ -216,6 +216,8 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
   .mobile-menu{
     display:block;
     margin-left:auto;
+    position:relative;
+    z-index:30;
   }
 
   .mobile-menu summary{
@@ -235,11 +237,18 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
   }
 
   .mobile-menu-panel{
-    margin-top:8px;
+    position:absolute;
+    right:0;
+    top:calc(100% + 8px);
     display:grid;
     grid-template-columns:repeat(2, minmax(0, 1fr));
     gap:8px;
     min-width:230px;
+    padding:10px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:var(--bg);
+    box-shadow:0 8px 20px rgba(17, 17, 17, 0.08);
   }
 
   .mobile-menu-panel .nav-btn{
@@ -316,7 +325,10 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
   }
 
   .pub-card{
-    padding:6px 0 2px;
+    border:1px solid #e0e0e0;
+    border-radius:12px;
+    background:#f3f4f6;
+    padding:12px;
     margin:0;
   }
 
