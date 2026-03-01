@@ -190,7 +190,7 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 
 @media only screen and (max-width:500px){
   .wrapper{
-    max-width: 390px;
+    max-width: 370px;
     padding:30px 30px 44px;
   }
 
@@ -256,9 +256,9 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 }
 
 .pub-list {
-  padding-left: 0;
+  padding-left: 28px;
   list-style-type: bracketed-decimal;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 .pub-list li::marker {
