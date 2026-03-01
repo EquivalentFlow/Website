@@ -241,9 +241,9 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
     right:0;
     top:calc(100% + 8px);
     display:grid;
-    grid-template-columns:repeat(2, minmax(0, 1fr));
+    grid-template-columns:1fr;
     gap:8px;
-    min-width:230px;
+    min-width:200px;
     padding:10px;
     border:1px solid var(--line);
     border-radius:12px;
@@ -325,10 +325,7 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
   }
 
   .pub-card{
-    border:1px solid #e0e0e0;
-    border-radius:12px;
-    background:#f3f4f6;
-    padding:12px;
+    padding:6px 0 2px;
     margin:0;
   }
 
