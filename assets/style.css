@@ -102,6 +102,44 @@ a:hover{text-decoration:underline}
   }
 }
 
+/* Medium screens (tablet/smaller laptops): narrower page + cleaner menu */
+@media only screen and (min-width:501px) and (max-width:900px){
+  .wrapper{
+    max-width: 620px;
+    padding:22px 18px 52px;
+  }
+
+  .nav{
+    gap:10px;
+    padding:12px;
+    border:1px solid var(--line);
+    border-radius:12px;
+  }
+
+  .nav-links{
+    gap:8px;
+  }
+
+  .nav-btn{
+    padding:5px 10px;
+    border:1px solid transparent;
+    border-radius:8px;
+    background:#f7f7f8;
+  }
+
+  .nav-btn:hover{
+    text-decoration:none;
+    border-color:var(--line);
+    background:#f1f2f4;
+  }
+
+  .nav-btn.is-current,
+  .home-btn{
+    border-color:var(--line);
+    background:#eceef2;
+  }
+}
+
 /* Refined academic title */
 h1{
   font-size:28px;
@@ -215,8 +253,9 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 }
 
 .pub-list li::marker {
-  font-weight: 500;      /* optional: slightly nicer number weight */
-  font-size: 0.95em;     /* optional */
+  content: "[" counter(list-item) "] ";
+  font-weight: 500;
+  font-size: 0.95em;
 }
 
 .pub-list li {
