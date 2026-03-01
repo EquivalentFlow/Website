@@ -125,8 +125,13 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
   padding-left: 20px;   /* tighter marker indent from page edge */
 }
 
+.pub-list li::marker {
+  font-weight: 500;      /* optional: slightly nicer number weight */
+  font-size: 0.95em;     /* optional */
+}
+
 .pub-list li {
-  padding-left: 0;      /* remove extra gap between marker and publication title */
+  padding-left: 6px;     /* <-- THIS increases space after the number */
 }
 
 /* Make publication cards tighter than default */
