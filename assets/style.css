@@ -256,8 +256,9 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 }
 
 .pub-list {
-  padding-left: 20px;   /* tighter marker indent from page edge */
+  padding-left: 0;
   list-style-type: bracketed-decimal;
+  list-style-position: inside;
 }
 
 .pub-list li::marker {
@@ -266,7 +267,7 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 }
 
 .pub-list li {
-  padding-left: 6px;     /* <-- THIS increases space after the number */
+  padding-left: 0;
 }
 
 /* Make publication cards tighter than default */
