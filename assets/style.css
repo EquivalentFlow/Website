@@ -1,3 +1,4 @@
+
 :root{
   --bg:#ffffff;
   --text:#111111;
@@ -130,7 +131,7 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
 
 /* Make pub cards less padded (your "too big" issue) */
 .pub-card{
-  padding: 10px 12px;   /* adjust if you want even tighter */
+  padding: 7px 9px;   /* adjust if you want even tighter */
   margin-bottom: 14px;
 }
 
@@ -146,15 +147,25 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
   color: var(--muted);
 }
 
-/* Button (like your earlier version: simple, link-like) */
 .toggle-abstract{
-  margin-top: 8px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: var(--link);
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+
+  background: #fff;
+  color: var(--text);
+  font-size: 0.88em;
+  line-height: 1;
   cursor: pointer;
-  font-size: 0.92em;
+}
+
+.toggle-abstract:hover{
+  border-color: var(--text);
 }
 
 /* IMPORTANT: override existing .card .abstract { display: inline; } */
