@@ -128,7 +128,7 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
 
 /* Make publication cards tighter than default */
 .pub-card{
-  padding: 10px 12px;
+  padding: 7px 9px;
   margin: 0 0 12px 0;
 }
 
