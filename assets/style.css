@@ -126,7 +126,7 @@ hr{border:0;border-top:1px solid var(--line);margin:26px 0}
 }
 
 .pub-list li {
-  padding-left: 4px;    /* tighter distance between number and publication title */
+  padding-left: 2px;    /* tighter distance between number and publication title */
 }
 
 /* Make publication cards tighter than default */
