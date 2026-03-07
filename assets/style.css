@@ -99,6 +99,13 @@ a:hover{text-decoration:underline}
   .nav{
     position:sticky;
     top:0;
+    flex-wrap:nowrap;
+  }
+
+  .nav-links{
+    margin-left:auto;
+    justify-content:flex-end;
+    flex-wrap:nowrap;
   }
 
   .nav-links{
