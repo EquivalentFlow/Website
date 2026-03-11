@@ -1,0 +1,84 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bronshtein cube">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <style>
+    .bg { fill: #ececec; }
+    .edge {
+      stroke: #0b1580;
+      stroke-width: 2.6;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .node { fill: #9b0000; }
+    .axis {
+      stroke: #000;
+      stroke-width: 2.4;
+      fill: none;
+      marker-end: url(#arrow);
+    }
+    .label {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 22px;
+      fill: #111;
+    }
+    .axislabel {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 28px;
+      font-style: italic;
+      fill: #111;
+    }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="500" height="500"/>
+
+  <polygon points="90,410 300,410 300,200 90,200" fill="#bfc1e8" fill-opacity="0.35"/>
+  <polygon points="190,330 190,150 400,150 400,330" fill="#cfe6c8" fill-opacity="0.35"/>
+  <polygon points="300,410 400,330 400,150 300,200" fill="#f1d7d7" fill-opacity="0.30"/>
+
+  <line class="edge" x1="90" y1="410" x2="300" y2="410"/>
+  <line class="edge" x1="300" y1="410" x2="300" y2="200"/>
+  <line class="edge" x1="300" y1="200" x2="90" y2="200"/>
+  <line class="edge" x1="90" y1="200" x2="90" y2="410"/>
+
+  <line class="edge" x1="190" y1="330" x2="400" y2="330"/>
+  <line class="edge" x1="400" y1="330" x2="400" y2="150"/>
+  <line class="edge" x1="400" y1="150" x2="190" y2="150"/>
+  <line class="edge" x1="190" y1="150" x2="190" y2="330"/>
+
+  <line class="edge" x1="90" y1="410" x2="190" y2="330"/>
+  <line class="edge" x1="300" y1="410" x2="400" y2="330"/>
+  <line class="edge" x1="300" y1="200" x2="400" y2="150"/>
+  <line class="edge" x1="90" y1="200" x2="190" y2="150"/>
+
+  <line class="axis" x1="190" y1="330" x2="190" y2="90"/>
+  <line class="axis" x1="400" y1="330" x2="470" y2="330"/>
+  <line class="axis" x1="90" y1="410" x2="52" y2="442"/>
+
+  <circle class="node" cx="90" cy="410" r="6.5"/>
+  <circle class="node" cx="300" cy="410" r="6.5"/>
+  <circle class="node" cx="400" cy="330" r="6.5"/>
+  <circle class="node" cx="190" cy="330" r="6.5"/>
+  <circle class="node" cx="90" cy="200" r="6.5"/>
+  <circle class="node" cx="300" cy="200" r="6.5"/>
+  <circle class="node" cx="400" cy="150" r="6.5"/>
+  <circle class="node" cx="190" cy="150" r="6.5"/>
+
+  <text class="label" x="102" y="436" text-anchor="middle">SR</text>
+  <text class="label" x="300" y="436" text-anchor="middle">QFT</text>
+  <text class="label" x="400" y="356" text-anchor="middle">QM</text>
+  <text class="label" x="170" y="335" text-anchor="end">CM</text>
+
+  <text class="label" x="70" y="195" text-anchor="end">GR</text>
+  <text class="label" x="322" y="204">QG</text>
+  <text class="label" x="400" y="132" text-anchor="middle">NRQG</text>
+  <text class="label" x="170" y="145" text-anchor="end">NG</text>
+
+  <text class="axislabel" x="160" y="86">G</text>
+  <text class="axislabel" x="447" y="319">ℏ</text>
+  <text class="axislabel" x="8" y="462">1/c</text>
+</svg>
