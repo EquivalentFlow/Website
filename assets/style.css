@@ -504,3 +504,31 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
     margin: 0 auto 12px;
   }
 }
+
+
+.contact-methods{
+  display:grid;
+  gap:12px;
+  margin-top:12px;
+}
+
+.contact-card{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px 14px;
+  background:#fafafb;
+}
+
+.contact-label{
+  margin:0 0 6px;
+  color:var(--muted);
+  font-size:0.9em;
+}
+
+.contact-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-weight:500;
+  overflow-wrap:anywhere;
+}
