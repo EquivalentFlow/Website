@@ -475,3 +475,32 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
     align-self: flex-start;
   }
 }
+
+.research-interest::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.research-diagram-wrap {
+  float: right;
+  width: 200px;
+  max-width: 34%;
+  height: auto;
+  margin: 4px 0 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f5f5f5;
+  shape-margin: 10px;
+  box-shadow: 0 6px 16px rgba(17, 17, 17, 0.06);
+}
+
+@media only screen and (max-width: 540px) {
+  .research-diagram-wrap {
+    float: none;
+    display: block;
+    width: min(220px, 100%);
+    max-width: 100%;
+    margin: 0 auto 12px;
+  }
+}
