@@ -96,10 +96,6 @@ a:hover{text-decoration:underline}
 }
 
 @media only screen and (min-width:501px){
-  .wrapper{
-    padding-top:0;
-  }
-
   .nav{
     position:sticky;
     top:0;
@@ -126,7 +122,7 @@ a:hover{text-decoration:underline}
 @media only screen and (min-width:501px) and (max-width:900px){
   .wrapper{
     max-width: 592px;
-    padding:0 24px 52px;
+    padding:22px 24px 52px;
   }
 
   .nav{
