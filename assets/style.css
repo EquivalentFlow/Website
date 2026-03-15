@@ -107,7 +107,6 @@ a:hover{text-decoration:underline}
     margin-left:calc(50% - 50vw);
     margin-right:calc(50% - 50vw);
     padding:12px 24px;
-    border-bottom:0;
     flex-wrap:nowrap;
   }
 
