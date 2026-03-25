@@ -55,6 +55,8 @@ a:hover{text-decoration:underline}
   display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   padding:10px 0 12px;border-bottom:1px solid var(--line);margin-bottom:18px;
   background:var(--bg);
+  position:sticky;
+  top:0;
   z-index:20;
 }
 
@@ -97,8 +99,6 @@ a:hover{text-decoration:underline}
 
 @media only screen and (min-width:501px){
   .nav{
-    position:sticky;
-    top:0;
     flex-wrap:nowrap;
   }
 
@@ -206,10 +206,15 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
     padding:18px 22px 40px;
   }
 
+  body.talks-page hr:last-of-type{
+    display:none;
+  }
+
   .nav{
     justify-content:space-between;
     align-items:flex-start;
     gap:8px;
+    top:8px;
     margin-bottom:16px;
     padding:0 0 12px;
   }
