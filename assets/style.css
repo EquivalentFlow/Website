@@ -214,6 +214,7 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
     justify-content:space-between;
     align-items:flex-start;
     gap:8px;
+    top:8px;
     margin-bottom:16px;
     padding:0 0 12px;
   }
