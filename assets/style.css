@@ -77,33 +77,38 @@ a:hover{text-decoration:underline}
   color:var(--text);
   font-style:normal;
   font-weight:500;
-  font-size:12px;
-  letter-spacing:0.1em;
-  text-transform:uppercase;
+  font-size:15px;
+  letter-spacing:0;
+  text-transform:none;
   line-height:1.2;
-  padding:2px 0;
+  padding:3px 2px;
   border-bottom:1px solid transparent;
+  border-radius:8px;
+  transition:background-color .16s ease, border-color .16s ease, color .16s ease;
 }
 
 .nav-btn.is-current,
 .home-btn{
   font-weight:600;
-  border-bottom-color:var(--text);
+  border-bottom-color:transparent;
+  background:#ffffff;
+  box-shadow:0 1px 2px rgba(17,17,17,.06);
 }
 
 .home-btn{
   display:inline-flex;
   align-items:center;
-  padding:2px 0;
+  padding:3px 10px;
   border:0;
   border-bottom:1px solid transparent;
-  border-radius:0;
+  border-radius:8px;
   background:transparent;
 }
 
 .nav-btn:hover{
   text-decoration:none;
-  border-bottom-color:var(--text);
+  border-bottom-color:transparent;
+  background:#ffffff;
 }
 
 .mobile-menu{
@@ -115,8 +120,13 @@ a:hover{text-decoration:underline}
     flex-wrap:nowrap;
     justify-content:center;
     gap:18px;
-    padding:6px 0 14px;
-    border-bottom:0;
+    width:fit-content;
+    margin:0 auto 20px;
+    padding:8px 14px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:#f4f4f5;
+    box-shadow:0 8px 18px rgba(17, 17, 17, 0.05);
   }
 
   .nav-links{
@@ -127,7 +137,7 @@ a:hover{text-decoration:underline}
   }
 
   .home-btn{
-    margin-right:8px;
+    margin-right:2px;
   }
 }
 
@@ -187,12 +197,27 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 .list li{margin:6px 0}
 
 .hero{
-  display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;
+  display:block;
+}
+
+.hero-copy::after{
+  content:"";
+  display:block;
+  clear:both;
 }
 
 .avatar{
-  width:140px;height:140px;border-radius:14px;object-fit:cover;
+  float:right;
+  width:260px;
+  max-width:42%;
+  margin:4px 0 14px 22px;
+  transform:rotate(1.2deg);
+  height:auto;
+  aspect-ratio:1/1;
+  border-radius:20px;
+  object-fit:cover;
   border:1px solid var(--line);background:#f6f6f6;
+  box-shadow:0 12px 24px rgba(17,17,17,.08);
 }
 
 .card{
@@ -340,13 +365,17 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
   }
 
   .hero{
-    gap:14px;
+    display:block;
   }
 
   .avatar{
-    width:120px;
-    height:120px;
-    border-radius:12px;
+    float:none;
+    display:block;
+    width:min(230px, 100%);
+    max-width:100%;
+    margin:0 auto 14px;
+    border-radius:14px;
+    transform:none;
   }
 
   .card{
