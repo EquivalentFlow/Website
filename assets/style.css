@@ -233,43 +233,17 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 .badges{margin-top:8px;display:flex;flex-wrap:wrap;gap:10px}
 .badges a{font-size:14px}
 
-.profile-links{
-  margin-top:18px;
-  padding-top:12px;
-  border-top:1px solid var(--line);
+.profile-links-inline{
+  margin:12px 0 8px;
+  font-size:15px;
 }
 
-.profile-links-label{
-  margin:0 0 8px;
-  color:var(--muted);
-  font-size:13px;
-  letter-spacing:.03em;
-  text-transform:uppercase;
+.profile-links-inline a{
+  margin-right:10px;
 }
 
-.profile-links-row{
-  margin:0 0 12px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-}
-
-.profile-link-chip{
-  display:inline-flex;
-  align-items:center;
-  padding:5px 10px;
-  border:1px solid var(--line);
-  border-radius:999px;
-  background:#f7f7f8;
-  color:var(--text);
-  font-size:13px;
-  text-decoration:none;
-}
-
-.profile-link-chip:hover{
-  text-decoration:none;
-  background:#efeff1;
-  border-color:#d9d9dd;
+.profile-divider{
+  margin:10px 0 12px;
 }
 
 .cv-link{
@@ -277,8 +251,7 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
   font-size:15px;
   display:flex;
   flex-wrap:wrap;
-  gap:6px;
-  align-items:baseline;
+  gap:4px;
 }
 
 .cv-link a{
