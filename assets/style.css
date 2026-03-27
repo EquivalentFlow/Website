@@ -207,10 +207,10 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 }
 
 .avatar{
-  float:right;
+  float:left;
   width:160px;
   max-width:27.2%;
-  margin:4px 0 14px 22px;
+  margin:4px 22px 14px 0;
   transform:none;
   height:auto;
   aspect-ratio:1/1;
@@ -232,6 +232,23 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 
 .badges{margin-top:8px;display:flex;flex-wrap:wrap;gap:10px}
 .badges a{font-size:14px}
+
+.profile-links{
+  margin-top:18px;
+  padding:14px 16px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fafafa;
+}
+
+.profile-links .badges{
+  margin:0 0 10px;
+}
+
+.cv-link{
+  margin:0;
+  font-size:15px;
+}
 
 .footer-nav{
   display:flex;gap:12px;flex-wrap:wrap;
