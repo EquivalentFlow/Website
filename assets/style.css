@@ -208,10 +208,10 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 
 .avatar{
   float:right;
-  width:260px;
-  max-width:42%;
+  width:200px;
+  max-width:34%;
   margin:4px 0 14px 22px;
-  transform:rotate(1.2deg);
+  transform:none;
   height:auto;
   aspect-ratio:1/1;
   border-radius:20px;
