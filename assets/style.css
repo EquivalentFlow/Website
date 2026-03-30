@@ -139,14 +139,6 @@ a:hover{text-decoration:underline}
   .home-btn{
     margin-right:2px;
   }
-
-  .profile-links-inline{
-    text-align:center;
-  }
-
-  .cv-link{
-    justify-content:center;
-  }
 }
 
 /* Medium screens (tablet/smaller laptops): narrower page + cleaner menu */
