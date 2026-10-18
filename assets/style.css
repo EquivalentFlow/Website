@@ -864,3 +864,44 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 .nav-links .nav-btn{
   font-weight:500;
 }
+
+/* Compact mobile header stays visible with the name and menu together. */
+@media only screen and (max-width:700px){
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 0;
+    margin-bottom:16px;
+    background:var(--bg);
+  }
+
+  .site-header .nav{
+    position:static;
+    flex:0 0 auto;
+    width:auto;
+    min-width:0;
+    margin:0 0 0 auto;
+    padding:0;
+    border:0;
+    border-radius:0;
+    background:transparent;
+    box-shadow:none;
+  }
+
+  .site-header .home-btn{
+    display:none;
+  }
+
+  .site-header .mobile-menu{
+    margin-left:0;
+  }
+
+  .home-page .avatar{
+    width:min(180px, 100%);
+    max-width:100%;
+    border-radius:20px;
+  }
+}
