@@ -867,6 +867,10 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
 
 /* Compact mobile header stays visible with the name and menu together. */
 @media only screen and (max-width:700px){
+  .wrapper{
+    padding-top:0;
+  }
+
   .site-header{
     position:sticky;
     top:0;
@@ -900,7 +904,7 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
   }
 
   .home-page .avatar{
-    width:min(180px, 100%);
+    width:min(165px, 100%);
     max-width:100%;
     border-radius:20px;
   }
