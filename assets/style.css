@@ -970,3 +970,8 @@ div.cv-viewer{
   clip-path:inset(50%);
   white-space:nowrap;
 }
+
+/* Keep navigation width stable when the active page changes. */
+.nav-links .nav-btn{
+  font-weight:500;
+}
