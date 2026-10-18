@@ -20,8 +20,4 @@
     <loc>https://lorenzolorenzetti.net/contact.html</loc>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://lorenzolorenzetti.net/cv.html</loc>
-    <priority>0.3</priority>
-  </url>
 </urlset>
