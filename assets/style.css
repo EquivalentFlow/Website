@@ -919,3 +919,63 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
     min-height:420px;
   }
 }
+
+.cv-reader-controls{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:12px;
+  font-size:14px;
+}
+
+.cv-reader-controls button{
+  min-width:34px;
+  min-height:34px;
+  padding:6px 10px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:#f4f4f5;
+  color:var(--text);
+  font:inherit;
+  cursor:pointer;
+}
+
+.cv-reader-controls button:disabled{
+  opacity:.4;
+  cursor:default;
+}
+
+.cv-reader-controls button:focus-visible,
+.cv-viewer:focus-visible{
+  outline:2px solid var(--link);
+  outline-offset:2px;
+}
+
+.cv-zoom-controls{
+  display:flex;
+  gap:6px;
+  margin-left:auto;
+}
+
+div.cv-viewer{
+  overflow:auto;
+  padding:16px;
+  background:#e9e9eb;
+}
+
+#cv-canvas{
+  display:block;
+  margin:0 auto;
+  background:#fff;
+  box-shadow:0 2px 8px rgba(17,17,17,.12);
+}
+
+.cv-reader-text{
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip-path:inset(50%);
+  white-space:nowrap;
+}
