@@ -888,7 +888,7 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
     max-width:100%;
     margin:0;
     border:0;
-    border-radius:0;
+    border-radius:20px;
     background:transparent;
     box-shadow:none;
   }
@@ -898,15 +898,6 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0}
   }
 }
 
-@media only screen and (min-width:901px){
-  .home-page .wrapper{
-    max-width:800px;
-  }
-
-  .cv-page .wrapper{
-    max-width:1000px;
-  }
-}
 
 @media only screen and (max-width:700px){
   .home-page .avatar{
