@@ -918,3 +918,41 @@ button, input, select, textarea{
 .site-name, h1, h2, h3{
   font-weight:600;
 }
+
+/* Increase typography by one step only in the mobile layout. */
+@media only screen and (max-width:700px){
+  body{font-size:16px}
+  .site-name{font-size:24px}
+  h1{font-size:28px}
+  h2{font-size:22px}
+  h3{font-size:18px}
+
+  .small,
+  .card .meta,
+  .badges a{
+    font-size:14px;
+  }
+
+  .nav-btn,
+  .mobile-menu-panel .nav-btn,
+  .home-btn,
+  .profile-links-inline,
+  .cv-link{
+    font-size:15px;
+  }
+
+  .mobile-menu summary{
+    font-size:16px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .site-name{font-size:22px}
+  h1{font-size:26px}
+  h2{font-size:21px}
+  .small{font-size:13px}
+}
+
+@media only screen and (max-width:380px){
+  .site-name{font-size:20px}
+}
